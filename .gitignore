@@ -15,3 +15,7 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Lighthouse reports
+lighthouse-report.html
+lighthouse-mobile.html

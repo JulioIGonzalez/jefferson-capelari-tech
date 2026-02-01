@@ -4,31 +4,97 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="description" content="Jefferson Capelari - Técnico especializado en reparación de celulares, iPhones, Android, computadoras, soldadura electrónica, desbloqueos e instalación de cámaras de seguridad. Servicio profesional y garantizado.">
-    <meta name="keywords" content="reparación celulares, técnico celulares, reparación iPhone, reparación Android, soldadura electrónica, desbloqueo celulares, instalación cámaras, reparación computadoras, Jefferson Capelari">
+    <meta name="keywords" content="reparación celulares, técnico celulares, reparación iPhone, reparación Android, soldadura electrónica, desbloqueo celulares, instalación cámaras, reparación computadoras, Jefferson Capelari, Soluciones Tecnológicas">
     <meta name="author" content="Jefferson Capelari">
     <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#6366f1">
+    <link rel="canonical" href="https://jefferson-capelari-tech.web.app/">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://jeffersoncapelari.com/">
+    <meta property="og:url" content="https://jefferson-capelari-tech.web.app/">
     <meta property="og:title" content="Jefferson Capelari | Técnico en Reparación de Celulares y Computadoras">
     <meta property="og:description" content="Servicio profesional de reparación de celulares, iPhones, Android, computadoras, soldadura electrónica y más. Contacta ahora.">
-    <meta property="og:image" content="https://jeffersoncapelari.com/img/og-image.jpg">
+    <meta property="og:image" content="https://jefferson-capelari-tech.web.app/img/jefferson-profile.png">
+    <meta property="og:image:width" content="800">
+    <meta property="og:image:height" content="800">
+    <meta property="og:locale" content="es_ES">
+    <meta property="og:site_name" content="Soluciones Tecnológicas - Jefferson Capelari">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://jeffersoncapelari.com/">
-    <meta property="twitter:title" content="Jefferson Capelari | Técnico en Reparación de Celulares">
-    <meta property="twitter:description" content="Servicio profesional de reparación de celulares, iPhones, Android, computadoras y más.">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://jefferson-capelari-tech.web.app/">
+    <meta name="twitter:title" content="Jefferson Capelari | Técnico en Reparación de Celulares">
+    <meta name="twitter:description" content="Servicio profesional de reparación de celulares, iPhones, Android, computadoras y más.">
+    <meta name="twitter:image" content="https://jefferson-capelari-tech.web.app/img/jefferson-profile.png">
 
-    <title>Jefferson Capelari | Técnico en Reparación de Celulares y Computadoras</title>
+    <title>Jefferson Capelari | Técnico en Reparación de Celulares y Computadoras | Soluciones Tecnológicas</title>
+    
+    <!-- Structured Data (JSON-LD) para SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "@id": "https://jefferson-capelari-tech.web.app/#business",
+          "name": "Soluciones Tecnológicas - Jefferson Capelari",
+          "description": "Servicio profesional de reparación de celulares, iPhones, Android, computadoras, soldadura electrónica, desbloqueos e instalación de cámaras de seguridad.",
+          "url": "https://jefferson-capelari-tech.web.app/",
+          "telephone": "+5492901478638",
+          "email": "jefferson.capelari@gmail.com",
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "Argentina"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -25.624009,
+            "longitude": -54.581073
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+            "opens": "09:00",
+            "closes": "19:00"
+          },
+          "priceRange": "$$",
+          "image": "https://jefferson-capelari-tech.web.app/img/jefferson-profile.png",
+          "sameAs": []
+        },
+        {
+          "@type": "Person",
+          "@id": "https://jefferson-capelari-tech.web.app/#person",
+          "name": "Jefferson Capelari",
+          "jobTitle": "Técnico en reparación de dispositivos móviles y computadoras",
+          "worksFor": { "@id": "https://jefferson-capelari-tech.web.app/#business" },
+          "email": "jefferson.capelari@gmail.com",
+          "telephone": "+5492901478638",
+          "description": "Técnico electrónico con más de 10 años de experiencia en reparación de celulares, iPhones, Android, computadoras y sistemas de seguridad."
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://jefferson-capelari-tech.web.app/#website",
+          "url": "https://jefferson-capelari-tech.web.app/",
+          "name": "Soluciones Tecnológicas",
+          "description": "Reparación profesional de celulares y computadoras - Jefferson Capelari",
+          "publisher": { "@id": "https://jefferson-capelari-tech.web.app/#business" },
+          "inLanguage": "es-ES"
+        }
+      ]
+    }
+    </script>
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📱</text></svg>">
     
-    <!-- Google Fonts -->
+    <!-- Preload y preconnect para performance (Lighthouse) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <!-- Font Awesome -->
@@ -36,17 +102,18 @@
     
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Skip link para accesibilidad (Lighthouse) -->
+    <a href="#home" class="skip-link">Ir al contenido principal</a>
+    
     <!-- Preloader -->
     <div class="preloader" id="preloader">
-        <div class="loader">
-            <div class="loader-icon">
-                <i class="fas fa-mobile-alt"></i>
+        <div class="loader-hourglass">
+            <div class="hourglass-wrap">
+                <i class="fas fa-hourglass-half hourglass-icon" aria-hidden="true"></i>
             </div>
-            <div class="loader-text">Cargando...</div>
+            <p class="loader-text">Cargando...</p>
         </div>
     </div>
 
@@ -55,7 +122,7 @@
         <div class="nav-container">
             <a href="#home" class="nav-logo">
                 <span class="logo-icon"><i class="fas fa-microchip"></i></span>
-                <span class="logo-text">Jefferson<span class="accent">Tech</span></span>
+                <span class="logo-text">Soluciones <span class="accent">Tecnológicas</span></span>
             </a>
             
             <div class="nav-menu" id="nav-menu">
@@ -87,10 +154,24 @@
         </div>
     </nav>
 
+    <main id="main-content">
     <!-- Hero Section -->
-    <section class="hero" id="home">
+    <section class="hero" id="home" aria-label="Inicio">
         <div class="hero-bg">
             <div class="hero-gradient"></div>
+            <div class="hero-sun" aria-hidden="true"></div>
+            <div class="hero-stars" aria-hidden="true">
+                <span class="star star-white"></span>
+                <span class="star star-red"></span>
+                <span class="star star-blue"></span>
+                <span class="star star-white"></span>
+                <span class="star star-blue"></span>
+                <span class="star star-red"></span>
+                <span class="star star-white"></span>
+                <span class="star star-red"></span>
+                <span class="star star-blue"></span>
+                <span class="star star-white"></span>
+            </div>
             <div class="hero-particles" id="particles"></div>
         </div>
         
@@ -397,7 +478,7 @@
                         <h4>Cambio de Pantalla iPhone</h4>
                         <p>Reparación completa con pantalla OLED original</p>
                     </div>
-                    <img src="img/gallery/iphone-repair-1.jpg" alt="Reparación de iPhone - Cambio de pantalla" class="gallery-img">
+                    <img src="img/gallery/iphone-repair-1.jpg" alt="Reparación de iPhone - Cambio de pantalla" class="gallery-img" loading="lazy" decoding="async">
                 </div>
                 
                 <div class="gallery-item" data-category="soldering">
@@ -413,7 +494,7 @@
                         <h4>Reparación de Laptop</h4>
                         <p>Cambio de batería y limpieza de motherboard</p>
                     </div>
-                    <img src="img/gallery/laptop-repair-1.jpg" alt="Reparación de Laptop" class="gallery-img">
+                    <img src="img/gallery/laptop-repair-1.jpg" alt="Reparación de Laptop" class="gallery-img" loading="lazy" decoding="async">
                 </div>
                 
                 <div class="gallery-item" data-category="cameras">
@@ -421,7 +502,7 @@
                         <h4>Instalación Comercial</h4>
                         <p>Sistema de cámaras de seguridad profesional</p>
                     </div>
-                    <img src="img/gallery/camera-install-1.jpg" alt="Instalación de Sistema CCTV" class="gallery-img">
+                    <img src="img/gallery/camera-install-1.jpg" alt="Instalación de Sistema CCTV" class="gallery-img" loading="lazy" decoding="async">
                 </div>
                 
                 <div class="gallery-item" data-category="phones">
@@ -437,7 +518,7 @@
                         <h4>Reballing de Chip BGA</h4>
                         <p>Reparación avanzada con microscopio</p>
                     </div>
-                    <img src="img/gallery/soldering-2.jpg" alt="Reballing de chip BGA" class="gallery-img">
+                    <img src="img/gallery/soldering-2.jpg" alt="Reballing de chip BGA" class="gallery-img" loading="lazy" decoding="async">
                 </div>
             </div>
         </div>
@@ -659,14 +740,16 @@
         </div>
     </section>
 
+    </main>
+
     <!-- Footer -->
-    <footer class="footer">
+    <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-grid">
                 <div class="footer-brand">
                     <a href="#home" class="footer-logo">
                         <span class="logo-icon"><i class="fas fa-microchip"></i></span>
-                        <span class="logo-text">Jefferson<span class="accent">Tech</span></span>
+                        <span class="logo-text">Soluciones <span class="accent">Tecnológicas</span></span>
                     </a>
                     <p class="footer-description">
                         Técnico especializado en reparación de celulares, computadoras y sistemas de seguridad. Servicio profesional con garantía.
@@ -733,7 +816,7 @@
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2024 Jefferson Capelari. Todos los derechos reservados.</p>
+                <p>&copy; 2025 Jefferson Capelari. Todos los derechos reservados.</p>
                 <p>Diseñado con <i class="fas fa-heart"></i> para ofrecer el mejor servicio</p>
             </div>
         </div>

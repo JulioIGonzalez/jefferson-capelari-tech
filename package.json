@@ -1,0 +1,16 @@
+{
+  "name": "soluciones-tecnologicas",
+  "version": "1.0.0",
+  "description": "Sitio web profesional - Jefferson Capelari - Reparación de celulares y computadoras",
+  "private": true,
+  "scripts": {
+    "lighthouse": "lighthouse http://localhost:8080 --view --output=html --output-path=./lighthouse-report.html --chrome-flags=\"--headless\"",
+    "lighthouse:mobile": "lighthouse http://localhost:8080 --preset=perf --form-factor=mobile --view --output=html --output-path=./lighthouse-mobile.html --chrome-flags=\"--headless\"",
+    "serve": "npx serve -p 8080 -s .",
+    "audit": "npm run serve & sleep 3 && npm run lighthouse"
+  },
+  "devDependencies": {
+    "lighthouse": "^12.0.0",
+    "serve": "^14.2.0"
+  }
+}

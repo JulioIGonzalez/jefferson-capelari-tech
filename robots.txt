@@ -1,0 +1,5 @@
+# robots.txt para Soluciones Tecnológicas - Jefferson Capelari
+User-agent: *
+Allow: /
+
+Sitemap: https://jefferson-capelari-tech.web.app/sitemap.xml
