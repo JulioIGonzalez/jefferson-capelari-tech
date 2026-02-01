@@ -33,7 +33,7 @@ Sitio web profesional para Jefferson Capelari, técnico especializado en reparac
 
 ### Cambiar número de WhatsApp
 
-Busca y reemplaza `5491112345678` en todos los archivos por el número real de Jefferson (con código de país, sin +).
+Número WhatsApp actual: +54 9 2901 47-8638 (código: 5492901478638).
 
 ### Cambiar email
 

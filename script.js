@@ -33,19 +33,24 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
-    // Mobile menu toggle
+    // Menú hamburguesa: abrir/cerrar
     navToggle.addEventListener('click', function() {
-        navToggle.classList.toggle('active');
-        navMenu.classList.toggle('active');
+        const isOpen = navMenu.classList.toggle('active');
+        navToggle.classList.toggle('active', isOpen);
+        navToggle.setAttribute('aria-expanded', isOpen);
+        navToggle.setAttribute('aria-label', isOpen ? 'Cerrar menú' : 'Abrir menú');
+        document.body.style.overflow = isOpen ? 'hidden' : '';
     });
     
-    // Close mobile menu on link click
+    // Cerrar menú al hacer clic en un enlace
     navLinks.forEach(link => {
         link.addEventListener('click', function() {
             navToggle.classList.remove('active');
             navMenu.classList.remove('active');
+            navToggle.setAttribute('aria-expanded', 'false');
+            navToggle.setAttribute('aria-label', 'Abrir menú');
+            document.body.style.overflow = '';
             
-            // Update active state
             navLinks.forEach(l => l.classList.remove('active'));
             this.classList.add('active');
         });
@@ -284,7 +289,7 @@ ${data.message}
         
         // Encode message for WhatsApp URL
         const encodedMessage = encodeURIComponent(message);
-        const whatsappUrl = `https://wa.me/5491112345678?text=${encodedMessage}`;
+        const whatsappUrl = `https://wa.me/5492901478638?text=${encodedMessage}`;
         
         // Open WhatsApp
         window.open(whatsappUrl, '_blank');
@@ -297,26 +302,6 @@ ${data.message}
             contactForm.reset();
             contactForm.classList.remove('success');
         }, 3000);
-    });
-    
-    // ============================================
-    // BACK TO TOP BUTTON
-    // ============================================
-    const backToTop = document.getElementById('back-to-top');
-    
-    window.addEventListener('scroll', function() {
-        if (window.scrollY > 500) {
-            backToTop.classList.add('visible');
-        } else {
-            backToTop.classList.remove('visible');
-        }
-    });
-    
-    backToTop.addEventListener('click', function() {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
     });
     
     // ============================================
