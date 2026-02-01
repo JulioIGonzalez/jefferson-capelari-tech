@@ -90,29 +90,7 @@ body {
     position: relative;
 }
 
-/* Skip link (accesibilidad / Lighthouse) */
-.skip-link {
-    position: absolute;
-    top: -100px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 10000;
-    padding: 14px 24px;
-    background: var(--primary);
-    color: var(--white);
-    font-weight: 600;
-    border-radius: var(--radius-md);
-    text-decoration: none;
-    transition: top 0.2s ease;
-    box-shadow: 0 4px 12px rgba(99, 102, 241, 0.4);
-}
-.skip-link:focus {
-    top: max(20px, env(safe-area-inset-top));
-    outline: 3px solid var(--secondary);
-    outline-offset: 2px;
-}
-
-/* Focus visible para teclado (Lighthouse / accesibilidad) */
+/* Focus visible para teclado (accesibilidad) */
 :focus-visible {
     outline: 2px solid var(--primary);
     outline-offset: 2px;

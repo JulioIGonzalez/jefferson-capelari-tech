@@ -4,7 +4,17 @@
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', function() {
-    
+    // #region agent log
+    const skipLink = document.querySelector('.skip-link');
+    if (skipLink) {
+        const cs = window.getComputedStyle(skipLink);
+        const rect = skipLink.getBoundingClientRect();
+        const isFocused = document.activeElement === skipLink;
+        fetch('http://127.0.0.1:7242/ingest/ed64f3a2-dbc9-4046-b070-6255ec1f40ab',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'script.js:DOMContentLoaded',message:'skip-link state',data:{position:cs.position,top:cs.top,rectTop:rect.top,rectVisible:rect.top<window.innerHeight,isFocused},timestamp:Date.now(),sessionId:'debug-session',hypothesisId:'H1'})}).catch(()=>{});
+        if (isFocused) fetch('http://127.0.0.1:7242/ingest/ed64f3a2-dbc9-4046-b070-6255ec1f40ab',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({location:'script.js:DOMContentLoaded',message:'skip-link has focus',data:{},timestamp:Date.now(),sessionId:'debug-session',hypothesisId:'H2'})}).catch(()=>{});
+    }
+    // #endregion
+
     // ============================================
     // PRELOADER
     // ============================================
